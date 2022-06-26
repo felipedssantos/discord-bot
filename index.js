@@ -1,5 +1,6 @@
 // Require the necessary discord.js classes
 const { format } = require('date-fns');
+const { ptBR } = require('date-fns/locale/pt-BR');
 const { Client, Intents } = require('discord.js');
 require('dotenv').config();
 
@@ -25,7 +26,7 @@ client.on('interactionCreate', async (interaction) => {
       Data de criação: ${format(
         new Date(interaction.guild.createdAt),
         'dd/MM/yyyy',
-        { locale: 'pt-BR' }
+        { locale: ptBR }
       )}
       `
     );
