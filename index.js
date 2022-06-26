@@ -19,7 +19,7 @@ async function main() {
     if (commandName === 'ping') {
       await interaction.reply('Pong!');
     } else if (commandName === 'server') {
-      await interaction.reply('Server info.');
+      await interaction.reply('Server info testeeeee.');
     } else if (commandName === 'user') {
       await interaction.reply('User info.');
     }
